@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "stripInternal": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "rxjs-browser": ["./src/index"],
+//      "rxjs-browser/testing": ["./src/testing/index"],
+      "rxjs-browser/internal/*": ["./src/internal/*"]
+    },
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
